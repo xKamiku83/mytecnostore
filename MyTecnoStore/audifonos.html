@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TecnoStore | Teclados</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="img/logo.ico">
+</head>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/68363a384a34301911ec780b/1is9t6rjl';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+<body>
+  <header>
+    <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="">
+        <h2 class="nombre-empresa">TecnoStore</h2>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#categorias">Categorías</a></li>
+        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+        <li>
+          <div class="cart-icon" onclick="openCart()">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main> 
+    <section class="productos">
+      <h3>Todos nuestros teclados</h3>
+
+       <div class="contenedor-productos">
+        
+        <div class="producto">
+          <img src="img/audifonos1.jpg" alt="Audífonos Inalámbrios Krypton AD2000">
+          <h4>Audífonos Inalámbrios Krypton</h4>
+          <p>Audífonos Gamer inalámbricos blancos de diadema con micrófono con RGB</p>
+          <div class="precio">$699 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(18, 'Audífonos Inalámbrios Krypton AD2000', 699, '🎧')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/audifonos2.jpg" alt="Audífonos Alámbricos Gamecraft">
+          <h4>Audífonos Alámbricos Gamecraft</h4>
+          <p>Audífonos Gamer inalámbricos de diadema con micrófono color negro con RGB</p>
+          <div class="precio">$379 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(19, 'Audífonos Alámbricos Gamecraft', 379, '🎧')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/audifonos3.jpg" alt="Audífonos Inalámbricos JBL">
+          <h4>Audífonos Inalámbricos JBL</h4>
+          <p>Audífonos Gamer inalámbricos blancos de diadema con micrófono con RGB</p>
+          <div class="precio">$1,949 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(20, 'Audífonos Inalámbricos JBL', 1949, '🎧')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/audifonos4.jpg" alt="Audífonos Alámbricos Razer">
+          <h4>Audífonos Alámbricos Razer</h4>
+          <p>Audífonos alámbricos de diadema de color blanco con micrófono y cable de 1 metro</p>
+          <div class="precio">$1,199 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(21, 'Audífonos Alámbricos Razer', 1199, '🎧')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/audifonos5.jpg" alt="Audífonos Razer Blackshark V2">
+          <h4>Audífonos Razer Blackshark V2</h4>
+          <p>Audífonos alámbricos de diadema de color negro con micrófono y cable de 1 metro</p>
+          <div class="precio">$1,049 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(22, 'Audífonos Razer Blackshark V2', 1049, '🎧')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/audifonos6.jpg" alt="Audífonos Alámbricos Gamecraft">
+          <h4>Audífonos Alámbricos Gamecraft</h4>
+          <p>Audífonos de Diadema Alámbricos de color negro con cable de 1.5 metros</p>
+          <div class="precio">$269 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(23, 'Audífonos Alámbricos Gamecraft', 269, '🎧')">Agregar al carrito</button>
+        </div>
+        
+      </div>
+    </section>
+    
+
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCart()">&times;</span>
+      <div class="cart-header">
+        <h2>🛒 Mi Carrito de Compras</h2>
+      </div>
+      <div id="cartItems"></div>
+      <div id="cartSummary" class="cart-summary"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 TecnoStore | Algunos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

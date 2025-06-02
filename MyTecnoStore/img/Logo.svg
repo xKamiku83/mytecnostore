@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46667"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="logo.png"
+   inkscape:export-xdpi="97"
+   inkscape:export-ydpi="97"
+   inkscape:version="1.4.2 (2aeb623e1d, 2025-05-12)"
+   sodipodi:docname="Logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.35634119"
+     inkscape:cx="-422.34803"
+     inkscape:cy="538.80945"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:129.597px;font-family:'Play Pretend';-inkscape-font-specification:'Play Pretend';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:1;fill:#714bff;fill-opacity:1;stroke-width:45.9201"
+       x="44.935818"
+       y="44.492722"
+       id="text2"
+       transform="rotate(45)"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="stroke-width:45.9202"
+         x="44.935818"
+         y="44.492722">S</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:129.597px;font-family:Minercraftory;-inkscape-font-specification:Minercraftory;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:45.9201"
+       x="17.911114"
+       y="114.69434"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Play Pretend';-inkscape-font-specification:'Play Pretend';fill:#ffffff;fill-opacity:1;stroke-width:45.9202"
+         x="17.911114"
+         y="114.69434">T</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>TecnoStore | Inicio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="img/logo.ico">
+</head>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/68363a384a34301911ec780b/1is9t6rjl';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+<body>
+  <header>
+    <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="">
+        <h2 class="nombre-empresa">TecnoStore</h2>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#categorias">Categorías</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li>
+        <div class="cart-icon" onclick="openCart()">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main> 
+    <section class="hero">
+        <h1>Lo mejor en tecnología para tu día a día</h1>
+        <p>Explora nuestros productos de calidad y encuentra lo que necesitas</p>
+    </section>
+
+    <section class="categorias" id="categorias">
+      <div class="contenedor-categorias">
+        
+      </div>
+      <h3>Categorías</h3>
+      <div class="contenedor-categorias">
+        <a href="teclados.html" class="categoria">
+          <img src="img/teclado1.jpg" alt="Teclados" />
+          <span>Teclados</span>
+        </a>
+        <a href="ratones.html" class="categoria">
+          <img src="img/raton6.jpg" alt="Ratones" />
+          <span>Ratones</span>
+        </a>
+        <a href="gabinetes.html" class="categoria">
+          <img src="img/gabinete3.jpg" alt="Gabinetes" />
+          <span>Gabinetes</span>
+        </a>
+        <a href="audifonos.html" class="categoria">
+          <img src="img/audifonos2.jpg" alt="Audífonos" />
+          <span>Audífonos</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="productos-destacados">
+      <h3>Productos Destacados</h3>
+      <div class="contenedor-productos">
+        <div class="producto">
+          <img src="img/teclado5.jpg" alt="Teclado Alámbrico Razer Ornata V3">
+          <h4>Teclado Alámbrico Razer Ornata V3</h4>
+          <p>Teclado álámbrico con cable incluye un reposamanos ergonómico e iluminación RGB</p>
+          <div class="precio">$1,049 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(5, 'Teclado Alámbrico Razer Ornata V3', 1049, '⌨️')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/raton6.jpg" alt="Ratón Gamer Alámbrico Razer">
+          <h4>Ratón Gamer Alámbrico Razer</h4>
+          <p>Ratón Gamer color negro Alámbrico 1.5 metros con 6400 dpi</p>
+          <div class="precio">$599 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(11, 'Ratón Gamer Alámbrico Razer', 599, '🖱️')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/audifonos2.jpg" alt="Audífonos Alámbricos Gamecraft">
+          <h4>Audífonos Alámbricos Gamecraft</h4>
+          <p>Audífonos Gamer inalámbricos de diadema con micrófono color negro con RGB</p>
+          <div class="precio">$379 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(19, 'Audífonos Alámbricos Gamecraft', 379, '🎧')">Agregar al carrito</button>
+        </div>
+        
+        
+      </div>
+    </section>
+    
+    <section class="sobre-nosotros" id="nosotros">
+      <h1>Nosotros</h1>
+      <div>
+        <p class="nosotros-text">
+          Somos una empresa especializada en tecnología, enfocada en ofrecer
+          una amplia gama de productos y accesorios para computadoras y estaciones de trabajo.
+          Nos dedicamos a brindar soluciones prácticas, modernas y de calidad para quienes buscan
+          mejorar su experiencia digital, ya sea trabajando, estudiando o disfrutando de sus juegos
+          favoritos.
+        </p>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+        <div class="faq-content">
+          <details class="faq-item">
+            <summary class="faq-question">¿Qué es TecnoStore?</summary>
+            <p class="faq-answer">
+              Somos una empresa especializada en tecnología, enfocada en ofrecer una amplia gama de productos y accesorios para computadoras y estaciones de trabajo. Nos dedicamos a brindar soluciones prácticas, modernas y de calidad para quienes buscan mejorar su experiencia digital, ya sea trabajando, estudiando o disfrutando de sus juegos favoritos.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">¿Dónde está ubicada TecnoStore?</summary>
+            <p class="faq-answer">
+              Estamos ubicados en Av. Álvaro Obregón, Col. Tierra Blanca, 80030, Culiacán, Sinaloa.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">¿Cómo puedo contactar a TecnoStore?</summary>
+            <p class="faq-answer">
+              Puedes contactarnos por teléfono al 667 357 458, por correo electrónico a TecnoStore@gmail.com, o a través de nuestras redes sociales en Facebook, Instagram y WhatsApp.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">¿Qué tipo de productos ofrece TecnoStore?</summary>
+            <p class="faq-answer">
+              Ofrecemos una variedad de productos tecnológicos, incluyendo teclados, ratones, monitores, tarjetas gráficas y audífonos de alta calidad.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div class="container">
+        <h2 class="section-title">Contáctanos</h2>
+        <div class="contact-content">
+          <div class="contact-detail">
+            <h3 class="contact-detail-title">Envíanos tus comentarios</h3>
+            <p class="contact-detail-text">Estamos aquí para resolver cualquier duda que tengas. ¡Escríbenos o llámanos!</p>
+            <p class="contact-detail-info">Av. Álvaro Obregón, Col. Tierra Blanca, 80030, Culiacán, Sinaloa</p>
+            <p class="contact-detail-info">667 357 458</p>
+            <p class="contact-detail-info">TecnoStore@gmail.com</p>
+            <div class="social-buttons">
+              <a href="https://facebook.com/TecnoStore" target="_blank" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com/TecnoStore" target="_blank" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/667357458" target="_blank" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form action="/thank-you" id="contact-form" data-netlify="true" method="POST" name="contact-form">
+              <div class="form-group">
+                <label for="name">Tu nombre <span class="required-star">*</span></label>
+                <input type="text" id="name" class="form-input" placeholder="Escribe tu nombre aquí..." name="name" required oninvalid="this.setCustomValidity('Por favor, ingresa tu nombre.')" oninput="this.setCustomValidity('')" />
+              </div>
+              <div class="form-group">
+                <label for="email">Tu email <span class="required-star">*</span></label>
+                <input type="email" id="email" class="form-input" placeholder="Escribe tu correo aquí..." name="email" required oninvalid="this.setCustomValidity('Por favor, ingresa un correo electrónico válido.')" oninput="this.setCustomValidity('')" />
+              </div>
+              <div class="form-group">
+                <label for="comment">Tu comentario <span class="required-star">*</span></label>
+                <textarea class="form-textarea" id="comment" placeholder="Escribe tus comentarios aquí..." name="comment" required oninvalid="this.setCustomValidity('Por favor, escribe tu mensaje.')" oninput="this.setCustomValidity('')"></textarea>
+              </div>
+              <div class="form-group text-center">
+                <button type="submit" class="btn submit-button">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCart()">&times;</span>
+      <div class="cart-header">
+        <h2>🛒 Mi Carrito de Compras</h2>
+      </div>
+      <div id="cartItems"></div>
+      <div id="cartSummary" class="cart-summary"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 TecnoStore | Algunos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

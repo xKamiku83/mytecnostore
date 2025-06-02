@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TecnoStore | Teclados</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="img/logo.ico">
+</head>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/68363a384a34301911ec780b/1is9t6rjl';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+<body>
+  <header>
+    <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="">
+        <h2 class="nombre-empresa">TecnoStore</h2>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#categorias">Categorías</a></li>
+        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+        <li>
+          <div class="cart-icon" onclick="openCart()">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main> 
+    <section class="productos">
+      <h3>Todos nuestros teclados</h3>
+
+       <div class="contenedor-productos">
+        
+        <div class="producto">
+          <img src="img/teclado1.jpg" alt="Teclado Alámbrico Krypton T1000">
+          <h4>Teclado Alámbrico Krypton T1000</h4>
+          <p>Teclado alámbrico RGB con switches azules y cable de 1.5 metros</p>
+          <div class="precio">$649 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(1, 'Teclado alámbrico RGB T1000', 649, '⌨️')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/teclado2.jpg" alt="Teclado Alámbrico Krypton T4000">
+          <h4>Teclado Alámbrico Krypton T4000</h4>
+          <p>Teclado alámbrico RGB con switches azules y cable tipo C de 1.5 metros plug and play</p>
+          <div class="precio">$649 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(2, 'Teclado alámbrico RGB T4000', 649, '⌨️')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/teclado3.jpg" alt="Teclado Alámbrico Hyperex">
+          <h4>Teclado Alámbrico Hyperex</h4>
+          <p>Teclado alámbrico RGB con switches marrones y cable de 1.5 metros</p>
+          <div class="precio">$299 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(3, 'Teclado Alámbrico Hyperex RGB', 299, '⌨️')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/teclado4.jpg" alt="Teclado Alámbrico Hp 125">
+          <h4>Teclado Alámbrico Hp 125</h4>
+          <p>Teclado álámbrico con cable HP 125 incluye pies ajustables de 0 a 6 grados</p>
+          <div class="precio">$339 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(4, 'Teclado Alámbrico Hp 125', 339, '⌨️')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/teclado5.jpg" alt="Teclado Alámbrico Razer Ornata V3">
+          <h4>Teclado Alámbrico Razer Ornata V3</h4>
+          <p>Teclado álámbrico con cable incluye un reposamanos ergonómico e iluminación RGB</p>
+          <div class="precio">$1,049 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(5, 'Teclado Alámbrico Razer Ornata V3', 1049, '⌨️')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/teclado6.jpg" alt="Teclado Inalámbrico Novotek TI-140">
+          <h4>Teclado Inalámbrico Novotek TI-140</h4>
+          <p>Teclado inalámbrico gris con negro con batería recargable</p>
+          <div class="precio">$299 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(6, 'Teclado Inalámbrico Novotek TI-140', 299, '⌨️')">Agregar al carrito</button>
+        </div>
+        
+      </div>
+    </section>
+    
+
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCart()">&times;</span>
+      <div class="cart-header">
+        <h2>🛒 Mi Carrito de Compras</h2>
+      </div>
+      <div id="cartItems"></div>
+      <div id="cartSummary" class="cart-summary"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 TecnoStore | Algunos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TecnoStore | Ratones</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="img/logo.ico">
+</head>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/68363a384a34301911ec780b/1is9t6rjl';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+<body>
+  <header>
+    <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="">
+        <h2 class="nombre-empresa">TecnoStore</h2>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#categorias">Categorías</a></li>
+        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+        <li>
+          <div class="cart-icon" onclick="openCart()">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main> 
+    <section class="productos">
+      <h3>Todos nuestros Ratones</h3>
+
+       <div class="contenedor-productos">
+        
+        <div class="producto">
+          <img src="img/raton1.jpg" alt="Mouse Inalámbrico HP 200 Silver">
+          <h4>Ratón Inalámbrico HP 200 Silver</h4>
+          <p>Ratón Inalámbrico con sensor óptico 1000 dpi color negro con gris</p>
+          <div class="precio">$199 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(7, 'Ratón Inalámbrico HP 200 Silver', 199, '🖱️')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/raton2.jpg" alt="Ratón Alámbrico HP WIRED 100">
+          <h4>Ratón Alámbrico HP WIRED 100</h4>
+          <p>Ratón alámbrico con sensor óptico de 1600 dpi y cable de 1 metro</p>
+          <div class="precio">$129 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(8, 'Ratón Alámbrico HP WIRED 100', 129, '🖱️')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/raton3.jpg" alt="Ratón Alámbrico Novotek MA-130">
+          <h4>Ratón Alámbrico Novotek MA-130</h4>
+          <p>Ratón alámbrico con sensor óptico de 1200 dpi y cable de 1.5 metros</p>
+          <div class="precio">$99 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(9, 'Ratón Alámbrico Novotek MA-130', 99, '🖱️')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/raton4.jpg" alt="Mouse Inalámbrico Novotek">
+          <h4>Ratón Inalámbrico Novotek MD-140</h4>
+          <p>Ratón inalámbrico color negro con sensor óptico de 1600 dpi</p>
+          <div class="precio">$129 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(10, 'Ratón Inalámbrico Novotek MD-140', 129, '🖱️')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/raton5.jpg" alt="Ratón Inalámbrico Novotek MD-120">
+          <h4>Ratón Inalámbrico Novotek MD-120</h4>
+          <p>Ratón Inalámbrico color gris azulado con dpi ajustable </p>
+          <div class="precio">$129 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(5, 'Ratón Inalámbrico Novotek MD-120', 129, '🖱️')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/raton6.jpg" alt="Ratón Gamer Alámbrico Razer">
+          <h4>Ratón Gamer Alámbrico Razer</h4>
+          <p>Ratón Gamer color negro Alámbrico 1.5 metros con 6400 dpi</p>
+          <div class="precio">$599 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(11, 'Ratón Gamer Alámbrico Razer', 599, '🖱️')">Agregar al carrito</button>
+        </div>
+        
+      </div>
+    </section>
+    
+
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCart()">&times;</span>
+      <div class="cart-header">
+        <h2>🛒 Mi Carrito de Compras</h2>
+      </div>
+      <div id="cartItems"></div>
+      <div id="cartSummary" class="cart-summary"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 TecnoStore | Algunos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

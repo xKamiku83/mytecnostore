@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TecnoStore | Teclados</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="img/logo.ico">
+</head>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/68363a384a34301911ec780b/1is9t6rjl';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+<body>
+  <header>
+    <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="">
+        <h2 class="nombre-empresa">TecnoStore</h2>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#categorias">Categorías</a></li>
+        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+        <li>
+          <div class="cart-icon" onclick="openCart()">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main> 
+    <section class="productos">
+      <h3>Todos nuestros gabinetes</h3>
+
+       <div class="contenedor-productos">
+        
+        <div class="producto">
+          <img src="img/gabinete1.jpg" alt="Gabinete Gamer Xzeal Ir02 Micro Atx">
+          <h4>Gabinete Gamer Xzeal Micro Atx</h4>
+          <p>Gabinete Gamer con soporte para tarjeta madre Micro ATX y con cristal templado</p>
+          <div class="precio">$1,939 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(12, 'Gabinete Gamer Xzeal Ir02 Micro Atx', 1939, '')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/gabinete2.jpg" alt="Gabinete Xzeal Cubo Mini Torre">
+          <h4>Gabinete Xzeal Cubo Mini Torre</h4>
+          <p>Gabinete Gamer negro adecuado para Tarjeta Madre Micro ATX y Mini ITX</p>
+          <div class="precio">$957 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(13, 'Gabinete Xzeal Cubo Mini Torre', 957, '')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/gabinete3.jpg" alt="Gabinete Xzeal Con Ventana">
+          <h4>Gabinete Xzeal Con Ventana</h4>
+          <p>Gabbinete gamer compatible con placas base Micro-ATX y Mini-ITX</p>
+          <div class="precio">$1,159 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(14, 'Gabinete Xzeal Con Ventana', 1159, '')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/gabinete4.jpg" alt="Gabinete Xzeal Argb Insta">
+          <h4>Gabinete Xzeal Argb Insta </h4>
+          <p>Gabinete compatible con placas base Micro-ATX y Mini-ITX</p>
+          <div class="precio">$1,299 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(15, 'Gabinete Xzeal Argb Insta', 1299, '')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/gabinete5.jpg" alt="Gabinete Cougar Uniface Mini Rgb">
+          <h4>Gabinete Cougar Uniface Mini Rgb</h4>
+          <p>Gabinete Gamer compatible con placas base Micro-ATX y Mini-ITX</p>
+          <div class="precio">$1,739 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(16, 'Gabinete Cougar Uniface Mini Rgb', 1739, '')">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/gabinete6.jpg" alt="Gabinete Cougar Purity Rgb Con Ventana">
+          <h4>Gabinete Cougar Purity Rgb</h4>
+          <p>Gabinete Gamer compatible con placas base Micro-ATX y Mini-ITX,  puertos USB 3.0 y 2.0</p>
+          <div class="precio">$1,459 MXN</div>
+          <button class="btn-agregar" onclick="addToCart(17, 'Gabinete Cougar Purity Rgb Con Ventana', 1459, '')">Agregar al carrito</button>
+        </div>
+        
+      </div>
+    </section>
+    
+
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCart()">&times;</span>
+      <div class="cart-header">
+        <h2>🛒 Mi Carrito de Compras</h2>
+      </div>
+      <div id="cartItems"></div>
+      <div id="cartSummary" class="cart-summary"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 TecnoStore | Algunos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
