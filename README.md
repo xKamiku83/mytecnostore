@@ -1,0 +1,2 @@
+# mytecnostore
+TecnoStore page
